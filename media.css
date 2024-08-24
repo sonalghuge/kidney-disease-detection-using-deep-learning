@@ -1,0 +1,106 @@
+@media (min-width: 992px) and (max-width: 1880px) {
+    .borderight {
+        border-right: 1px solid white;
+    }
+
+    .borderleft {
+        border-left: 1px solid white;
+    }
+
+    .imgheightWidth {
+        height: 20vh;
+        width: 25vw;
+    }
+
+    .w-55 {
+        width: 55vw;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .homePage {
+        display: block;
+        margin: auto !important;
+        height: 100%;
+    }
+
+    .borderight {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+
+    .borderleft {
+        border-top: 1px solid white;
+        border-left: none;
+    }
+
+    .imgheightWidth {
+        height: 20vh;
+        width: 50vw ;
+    }
+
+    .w-55 {
+        width: 90vw;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .homePage {
+        display: block;
+        margin: auto !important;
+        height: 100%;
+    }
+
+    .borderight {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+
+    .borderleft {
+        border-top: 1px solid white;
+        border-left: none;
+    }
+
+    .imgheightWidth {
+        height: 20vh;
+        width: 50vw;
+    }
+
+    .w-55 {
+        width: 90vw;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .homePage {
+        display: block;
+        margin: auto !important;
+        height: 100%;
+    }
+
+    .borderight {
+        border-bottom: 1px solid white;
+        border-right: none;
+    }
+    
+    .borderleft {
+        border-top: 1px solid white;
+        border-left: none;
+    }
+
+    .uploadedImgPage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgheightWidth {
+        height: 20vh;
+        width: 50vw;
+    }
+
+    .w-55 {
+        width: 90vw;
+    }
+}

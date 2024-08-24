@@ -1,0 +1,262 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.homePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: auto; */
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.uploadedImgPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main {
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.w-55 {
+    width: 35vw;
+}
+
+h3 {
+    font-family: "Lato", sans-serif;
+}
+
+/* UPLOAD IMAGE START */
+.card {
+    background-color: #fff;
+    width: 500px;
+    border-radius: 0.5rem;
+    box-shadow: 0px 5px 20px rgba(49, 104, 146, 0.25);
+}
+
+.card .card-body button {
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    background: #4389FF;
+    width: 100%;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+}
+
+.card .card-body button:hover {
+    background-color: #4388fff1;
+    transform: rotate(360deg);
+    transform: scale(1.01);
+}
+
+.card .card-body .card-title {
+    color: #1689ff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    /* margin-bottom: 0.25rem; */
+}
+
+.file-upload {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 1.5rem;
+    margin-top: 2rem;
+    border: 3px dashed #9dceff;
+    border-radius: 0.5rem;
+    transition: background-color 0.25s ease-out;
+}
+
+.file-upload:hover {
+    background-color: #dbedff;
+}
+
+.file-upload .file-input {
+    height: -webkit-fill-available;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* height: 100%; */
+    opacity: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.icon {
+    width: 75px;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .icon {
+        width: 50px;
+    }
+}
+
+/* UPLOAD IMAGE END */
+
+
+/* URL START */
+.wrapper {
+    height: 220px;
+    max-width: 410px;
+    background: #fff;
+    border-radius: 7px;
+    padding: 20px 25px 0;
+    transition: height 0.2s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper.active {
+    height: 530px;
+}
+
+header h1 {
+    font-size: 21px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+    color: #4389FF;
+    text-align: center;
+}
+
+p {
+    font-family: "Lato", sans-serif;
+}
+
+
+.wrapper .form {
+    margin: 20px 0 25px;
+}
+
+.form :where(input, button) {
+    width: 100%;
+    height: 55px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.1s ease;
+}
+
+.form input {
+    font-size: 18px;
+    padding: 0 17px;
+    border: 1px solid #999;
+}
+
+.form input:hover {
+    background-color: #dbedff;
+}
+
+.form input:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.form input::placeholder {
+    color: #999;
+}
+
+.form button {
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 17px;
+    background: #4389FF;
+}
+
+.form button:hover {
+    background-color: #4388fff1;
+    transform: rotate(360deg);
+    transform: scale(1.01);
+}
+
+.qr-code {
+    opacity: 0;
+    display: flex;
+    padding: 33px 0;
+    border-radius: 5px;
+    align-items: center;
+    pointer-events: none;
+    justify-content: center;
+    border: 1px solid #ccc;
+}
+
+.wrapper.active .qr-code {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.5s 0.05s ease;
+}
+
+.qr-code img {
+    width: 170px;
+}
+
+@media (max-width: 430px) {
+    .wrapper {
+        height: 255px;
+        padding: 16px 20px;
+    }
+
+    .wrapper.active {
+        height: 510px;
+    }
+
+    header p {
+        color: #696969;
+    }
+
+    .form :where(input, button) {
+        height: 52px;
+    }
+
+    .qr-code img {
+        width: 160px;
+    }
+}
+
+/* URL END */
+.centerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgheightWidth {
+    height: 25vh;
+    width: 25vw;
+}
+
+.table {
+    width: 100%;
+}
+
+.borderight {
+    border-right: 1px solid white;
+}
+
+.borderleft {
+    border-left: 1px solid white;
+}
